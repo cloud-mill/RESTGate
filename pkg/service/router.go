@@ -13,7 +13,7 @@ func NewRouter(services []models.Service) *mux.Router {
 
 	for _, service := range services {
 		for _, route := range service.Routes {
-			r.Methods(strings.Split(route.Method, ",")...).
+			r.Methods(strings.Split(route.Methods, ",")...).
 				Path(route.Pattern).
 				Name(route.Name).
 				Handler(http.HandlerFunc(ReverseHandlerFactory(service.ServiceUrl)))
