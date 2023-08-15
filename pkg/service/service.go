@@ -8,8 +8,8 @@ import (
 )
 
 type RESTGateService struct {
-	Port             int
-	ObservedServices []models.Service
+	Port             int              `yaml:"port"`
+	ObservedServices []models.Service `yaml:"observed_services"`
 }
 
 func (RESTGateService *RESTGateService) StartRESTGate() {
