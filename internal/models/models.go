@@ -6,6 +6,7 @@ type Route struct {
 	Name        string `yaml:"name"`
 	Methods     string `yaml:"methods"`
 	Pattern     string `yaml:"pattern"`
+	Description string `yaml:"description"`
 	HandlerFunc http.HandlerFunc
 }
 
