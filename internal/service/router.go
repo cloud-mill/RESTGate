@@ -1,7 +1,7 @@
 package service
 
 import (
-	"RESTGate/pkg/models"
+	"RESTGate/internal/models"
 	"github.com/gorilla/mux"
 	"net/http"
 	"strings"

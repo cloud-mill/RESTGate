@@ -1,7 +1,7 @@
 package service
 
 import (
-	"RESTGate/pkg/models"
+	"RESTGate/internal/models"
 	"github.com/sirupsen/logrus"
 	"net/http"
 	"strconv"

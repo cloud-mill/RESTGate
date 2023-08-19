@@ -1,7 +1,7 @@
 package main
 
 import (
-	"RESTGate/pkg/service"
+	"RESTGate/internal/service"
 	"github.com/sirupsen/logrus"
 	"gopkg.in/yaml.v3"
 	"os"
@@ -10,7 +10,7 @@ import (
 var RESTGateService service.RESTGateService
 
 func init() {
-	config, err := os.ReadFile(os.Getenv("RESTGATE_CONFIG_PATH"))
+	config, err := os.ReadFile(os.Getenv("RESTATE_CONFIG_PATH"))
 	if err != nil {
 		logrus.Fatalf("error reading RESTGate config YAML file: %v", err)
 	}

@@ -1,7 +1,7 @@
 package service
 
 import (
-	"RESTGate/pkg/reverse"
+	"RESTGate/internal/reverse"
 	"github.com/sirupsen/logrus"
 	"net/http"
 	"net/url"
