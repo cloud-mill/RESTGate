@@ -54,7 +54,7 @@ observed_services:
         pattern: "/account"
 
   - name: project-service
-    service_url: "http://localhost:8002"
+    service_url: "http://project-service:8002"
     routes:
       - name: project_service_health_check
         methods: "GET,OPTIONS"
