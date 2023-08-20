@@ -9,6 +9,9 @@ FROM debian:buster-slim
 
 MAINTAINER catache.com
 
+ARG RESTATE_CONFIG_PATH
+ENV RESTATE_CONFIG_PATH ${RESTATE_CONFIG_PATH}
+
 RUN apt-get update \
     && apt-get install -y ca-certificates tzdata \
     && rm -rf /var/lib/apt/lists/*
